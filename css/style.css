@@ -17,6 +17,9 @@ header{
     color: white;
     padding: 25px 0;
     align-items: center;
+    position: fixed;
+    z-index: 50;
+    width: 100%;
 }
 
 a{
@@ -31,7 +34,7 @@ a{
 .rightHead a{
     text-decoration: none;
     color: white;
-    margin-right: 25px;
+    margin-left: 25px;
     font-size: 20px;
     font-weight: 200;
     border-bottom: 1px solid transparent;
@@ -49,26 +52,33 @@ a{
     background-image: url(../img/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     backdrop-filter: blur(16px);
 }
 
-.contain{
+.containAll{
     display: flex;
-    width: 50%;
+    width: 80%;
     margin: auto;
     justify-content: space-between;
 }
 
-.contain h2{
-    font-size: 50px;
-    color: white;
+.containRight{
+    display: flex;
+    flex-direction: column;
 }
 
-.contain a{
-    margin-top: 50px;
+.containRight h2{
+    font-size: 50px;
+    color: white;
+    margin: 50px 0;
+
+}
+
+.containRight a{
+    width: fit-content;
     background-color: #fca311;
     padding: 10px;
     border-radius: 8px;
@@ -78,3 +88,46 @@ a{
     text-align: center;
 }
 
+/* ******************** */
+
+.pres{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.pres h3{
+    font-size: 40px;
+    font-weight: 300;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+
+.pres p{
+    padding-top: 20px;
+    font-size: 20px;
+    color: gray;
+}
+
+/* ***************************** */
+
+footer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(27, 26, 26);
+    color: white;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.socials li i{
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
