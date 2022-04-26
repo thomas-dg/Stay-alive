@@ -17,7 +17,7 @@ header{
     color: white;
     padding: 25px 0;
     align-items: center;
-    position: fixed;
+    /* position: fixed; */
     z-index: 50;
     width: 100%;
 }
@@ -52,7 +52,7 @@ a{
     background-image: url(../img/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     backdrop-filter: blur(16px);
@@ -68,6 +68,7 @@ a{
 .containRight{
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .containRight h2{
@@ -79,13 +80,19 @@ a{
 
 .containRight a{
     width: fit-content;
-    background-color: #fca311;
     padding: 10px;
+    border: 3px solid;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     font-weight: 600;
     text-align: center;
+    opacity: 50%;
+    text-transform: uppercase;
+}
+
+.containRight a:hover{
+    opacity: 100%;
 }
 
 /* ******************** */
@@ -109,6 +116,82 @@ a{
     font-size: 20px;
     color: gray;
 }
+
+
+/* ********************************* */
+
+section{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rules{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: auto;
+    width: 60%;
+}
+
+.contrib{
+    width: 30%;
+    margin-top: 50px;
+    padding: 15px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.contrib h3{
+    font-weight: 500;
+    padding-bottom: 5px;
+    border-bottom: 1px solid;
+}
+
+form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 10px;
+}
+
+.name{
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    outline: none;
+    border: 1.5px solid;
+}
+
+.submit{
+    font-size: 17px;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: #ffb703;
+    cursor: pointer;
+}
+
+.radio{
+    display: flex;
+    flex-direction: column;
+}
+
+.price{
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+#autre{
+    display: none;
+    margin-top: 7px;
+    width: 40px;
+}
+
 
 /* ***************************** */
 
