@@ -7,5 +7,7 @@ function isChecked(){
     if(other.checked == true){
         console.log('ok')
         nb.style.display = 'block';
+    } else {
+        nb.style.display = 'none';
     }
 }
